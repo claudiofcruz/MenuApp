@@ -82,14 +82,15 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_fragments) {
-
             Intent i = new Intent(this,OrientationActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
 
             // Handle the camera action
         } else if (id == R.id.nav_canvas) {
-
+            Intent i = new Intent(this,CanvasActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
