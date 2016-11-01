@@ -1,5 +1,6 @@
 package com.example.rm30966.menuapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,6 +82,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_fragments) {
+
+            Intent i = new Intent(this,OrientationActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
+
             // Handle the camera action
         } else if (id == R.id.nav_canvas) {
 
